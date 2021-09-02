@@ -10,9 +10,12 @@ struct Person: Equatable {
     let firstName: String
     let lastName: String
     let phoneNumber: String
-    var email: String?
     
     var fullName: String {
         "\(firstName) \(lastName)"
+    }
+    
+    var email: String {
+        firstName + lastName + "@gmail.com"
     }
 }
