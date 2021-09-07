@@ -121,19 +121,27 @@
             </objects>
             <point key="canvasLocation" x="615.38461538461536" y="-159.24170616113744"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detailed Contacts-->
         <scene sceneID="Llg-KE-p3k">
             <objects>
-                <tableViewController id="1jM-kE-Vwc" sceneMemberID="viewController">
+                <tableViewController id="1jM-kE-Vwc" customClass="DetailedContactListViewController" customModule="RandomContactListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7rY-43-dUL">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3fN-2j-egj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phone" id="3fN-2j-egj">
                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fN-2j-egj" id="35a-3S-J1K">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="email" id="ouI-n4-qUA">
+                                <rect key="frame" x="0.0" y="68.000001907348633" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ouI-n4-qUA" id="prZ-EJ-f2H">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -144,7 +152,7 @@
                             <outlet property="delegate" destination="1jM-kE-Vwc" id="NBe-mH-Wb4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Zrg-F9-w4c"/>
+                    <navigationItem key="navigationItem" title="Detailed Contacts" id="Zrg-F9-w4c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjG-rb-aJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,8 +164,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cnq-St-znl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="708-0E-8AX"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JRK-58-VP2">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JRK-58-VP2">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

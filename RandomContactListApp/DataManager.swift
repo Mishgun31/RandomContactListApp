@@ -11,9 +11,17 @@ class DataManager {
     
     static let shared = DataManager()
     
-    private let firstNames = ["John", "Aaron", "Tim", "Ted", "Steven"]
-    private let lastNames = ["Smith", "Dow", "Isaacson", "Pennyworth", "Jankins"]
-    private let phoneNumbers = ["+12345", "+234567", "+3596978", "+83999", "+89688"]
+    private let firstNames = ["John", "Aaron", "Tim",
+                              "Ted", "Steven", "Elle",
+                              "Sharon", "Katrin", "Jennifer"]
+    
+    private let lastNames = ["Smith", "Dow", "Isaacson",
+                             "Pennyworth", "Jankins", "Cook",
+                             "Aniston", "Smith"]
+    
+    private let phoneNumbers = ["+12345", "+234567", "+3596978",
+                                "+83999", "+89688", "+49278",
+                                "+16789", "+19998", "+4898998"]
     
     private init() {}
     

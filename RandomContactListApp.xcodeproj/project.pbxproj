@@ -16,6 +16,7 @@
 		744F325226DEDE6D00DEB159 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F325126DEDE6D00DEB159 /* DataManager.swift */; };
 		744F325426E0E88B00DEB159 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F325326E0E88B00DEB159 /* ContactListViewController.swift */; };
 		744F325726E0F81D00DEB159 /* ContactCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F325626E0F81D00DEB159 /* ContactCardViewController.swift */; };
+		7467AA0126E63DEC00F2C878 /* DetailedContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467AA0026E63DEC00F2C878 /* DetailedContactListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		744F325126DEDE6D00DEB159 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		744F325326E0E88B00DEB159 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		744F325626E0F81D00DEB159 /* ContactCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardViewController.swift; sourceTree = "<group>"; };
+		7467AA0026E63DEC00F2C878 /* DetailedContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				744F325326E0E88B00DEB159 /* ContactListViewController.swift */,
 				744F325626E0F81D00DEB159 /* ContactCardViewController.swift */,
+				7467AA0026E63DEC00F2C878 /* DetailedContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				744F323B26DD09A000DEB159 /* AppDelegate.swift in Sources */,
 				744F324F26DEDC2600DEB159 /* Person.swift in Sources */,
 				744F323D26DD09A000DEB159 /* SceneDelegate.swift in Sources */,
+				7467AA0126E63DEC00F2C878 /* DetailedContactListViewController.swift in Sources */,
 				744F325426E0E88B00DEB159 /* ContactListViewController.swift in Sources */,
 				744F325726E0F81D00DEB159 /* ContactCardViewController.swift in Sources */,
 			);
