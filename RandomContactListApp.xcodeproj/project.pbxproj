@@ -64,15 +64,12 @@
 		744F323926DD09A000DEB159 /* RandomContactListApp */ = {
 			isa = PBXGroup;
 			children = (
-				744F323A26DD09A000DEB159 /* AppDelegate.swift */,
-				744F323C26DD09A000DEB159 /* SceneDelegate.swift */,
-				744F324026DD09A000DEB159 /* Main.storyboard */,
-				744F324326DD09A200DEB159 /* Assets.xcassets */,
-				744F324526DD09A200DEB159 /* LaunchScreen.storyboard */,
-				744F324826DD09A200DEB159 /* Info.plist */,
+				7467AA0326E819CC00F2C878 /* SupportingFiles */,
+				7467AA0226E8196C00F2C878 /* Storyboards */,
 				744F325026DEDD3F00DEB159 /* Models */,
-				744F325126DEDE6D00DEB159 /* DataManager.swift */,
 				744F325526E0E89500DEB159 /* ViewControllers */,
+				7467AA0426E81AEB00F2C878 /* Managers */,
+				744F324326DD09A200DEB159 /* Assets.xcassets */,
 			);
 			path = RandomContactListApp;
 			sourceTree = "<group>";
@@ -93,6 +90,33 @@
 				7467AA0026E63DEC00F2C878 /* DetailedContactListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7467AA0226E8196C00F2C878 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				744F324026DD09A000DEB159 /* Main.storyboard */,
+				744F324526DD09A200DEB159 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7467AA0326E819CC00F2C878 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				744F323A26DD09A000DEB159 /* AppDelegate.swift */,
+				744F323C26DD09A000DEB159 /* SceneDelegate.swift */,
+				744F324826DD09A200DEB159 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7467AA0426E81AEB00F2C878 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				744F325126DEDE6D00DEB159 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RandomContactListApp/Info.plist;
+				INFOPLIST_FILE = RandomContactListApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RandomContactListApp/Info.plist;
+				INFOPLIST_FILE = RandomContactListApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
