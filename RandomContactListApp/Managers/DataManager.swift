@@ -11,35 +11,35 @@ class DataManager {
     
     static let shared = DataManager()
     
-    private let firstNames = ["John", "Aaron", "Tim",
-                              "Ted", "Steven", "Elle",
-                              "Sharon", "Katrin", "Jennifer"]
+    let firstNames = ["John", "Aaron", "Tim",
+                      "Ted", "Steven", "Elle",
+                      "Sharon", "Katrin", "Jennifer"]
     
-    private let lastNames = ["Smith", "Dow", "Isaacson",
-                             "Pennyworth", "Jankins", "Cook",
-                             "Aniston", "Smith"]
+    let lastNames = ["Smith", "Dow", "Isaacson",
+                     "Pennyworth", "Jankins", "Cook",
+                     "Aniston", "Smith"]
     
-    private let phoneNumbers = ["+12345", "+234567", "+3596978",
-                                "+83999", "+89688", "+49278",
-                                "+16789", "+19998", "+4898998"]
+    let phoneNumbers = ["+12345", "+234567", "+3596978",
+                        "+83999", "+89688", "+49278",
+                        "+16789", "+19998", "+4898998"]
     
     private init() {}
-    
-    func getPersonList() -> [Person] {
-        var people: [Person] = []
-        
-        for name in firstNames {
-            let person = Person(
-                firstName: name,
-                lastName: lastNames.randomElement() ?? "",
-                phoneNumber: phoneNumbers.randomElement() ?? ""
-            )
-            
-            if !people.contains(person) {
-                people.append(person)
-            }
-        }
-        
-        return people
-    }
 }
+
+//func getPersonList() -> [Person] {
+//    var people: [Person] = []
+//
+//    for name in firstNames {
+//        let person = Person(
+//            firstName: name,
+//            lastName: lastNames.randomElement() ?? "",
+//            phoneNumber: phoneNumbers.randomElement() ?? ""
+//        )
+//
+//        if !people.contains(person) {
+//            people.append(person)
+//        }
+//    }
+//
+//    return people
+//}

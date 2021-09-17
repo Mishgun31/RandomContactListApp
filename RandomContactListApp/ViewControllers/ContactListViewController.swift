@@ -9,11 +9,7 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
 
-    private let contacts = DataManager.shared.getPersonList()
-    
-    override func viewDidLoad() {
-        tabBarController?.delegate = self
-    }
+    var contacts: [Person]!
 
     // MARK: - Table view data source
 
@@ -38,21 +34,5 @@ class ContactListViewController: UITableViewController {
         guard let contactCardVC = segue.destination as? ContactCardViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         contactCardVC.contact = contacts[indexPath.row]
-    }
-}
-
-// MARK: - UITabBarControllerDelegate
-
-extension ContactListViewController: UITabBarControllerDelegate {
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
-        if let navigatinVC = viewController as? UINavigationController {
-            guard let detailedContactListVC = navigatinVC.topViewController as?
-                    DetailedContactListViewController else { return true }
-            detailedContactListVC.contacts = contacts
-        }
-        
-        return true
     }
 }

@@ -20,14 +20,25 @@ struct Person {
     }
 }
 
-// MARK:- Equatable methods
-
-extension Person: Equatable {
+extension Person {
     
-    static func == (lhs: Person, rhs: Person) -> Bool {
-        return
-            lhs.firstName == rhs.firstName ||
-            lhs.lastName == rhs.lastName ||
-            lhs.phoneNumber == rhs.phoneNumber
+    static func getContactList() -> [Person] {
+        var people: [Person] = []
+        
+        let firstNames = DataManager.shared.firstNames.shuffled()
+        let lastNames = DataManager.shared.lastNames.shuffled()
+        let phoneNumbers = DataManager.shared.phoneNumbers.shuffled()
+        
+        let iterationCount = min(firstNames.count, lastNames.count, phoneNumbers.count)
+        
+        for index in 0..<iterationCount {
+            let person = Person(firstName: firstNames[index],
+                                lastName: lastNames[index],
+                                phoneNumber: phoneNumbers[index])
+            
+            people.append(person)
+        }
+        
+        return people
     }
 }
